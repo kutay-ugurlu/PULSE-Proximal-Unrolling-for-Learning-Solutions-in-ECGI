@@ -2,28 +2,29 @@
 ```PULSE: Proximal Unrolling for Learning Solutions in ECGI```
 This repository includes the code for inverse ECG reconstruction via Half Quadratic Splitting.
 
-<div style="text-align: center;">
-    <figure>
-        <img src="torso_voltage.gif" alt="torso_voltage" width="300"/>
-        <figcaption>Torso Voltage</figcaption>
-    </figure>
-    <figure>
-        <img src="MAP.gif" alt="MAP" width="200"/>
-        <figcaption>MAP</figcaption>
-    </figure>
-    <figure>
-        <img src="Tik.gif" alt="Tik" width="200"/>
-        <figcaption>Tik</figcaption>
-    </figure>
-    <figure>
-        <img src="NN.gif" alt="NN" width="200"/>
-        <figcaption>NN</figcaption>
-    </figure>
-    <figure>
-        <img src="GT.gif" alt="GT" width="200"/>
-        <figcaption>GT</figcaption>
-    </figure>
+<div align="center">
+    <img src="torso_voltage.gif" width="250px">
+    <p><strong>Torso Voltage</strong></p>
 </div>
+
+<div align="center">
+    <table>
+        <tr>
+            <td><img src="MAP.gif" width="150px"></td>
+            <td><img src="Tik.gif" width="150px"></td>
+            <td><img src="NN.gif" width="150px"></td>
+            <td><img src="GT.gif" width="150px"></td>
+        </tr>
+        <tr>
+            <td><strong>MAP</strong></td>
+            <td><strong>Tik</strong></td>
+            <td><strong>NN</strong></td>
+            <td><strong>GT</strong></td>
+        </tr>
+    </table>
+</div>
+
+
 
 ```bibtex
 @article{ugurlu2024,
