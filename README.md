@@ -7,22 +7,18 @@ This repository includes the code for inverse ECG reconstruction via Half Quadra
         <img src="torso_voltage.gif" alt="torso_voltage" width="300"/>
         <figcaption>Torso Voltage</figcaption>
     </figure>
-
     <figure>
         <img src="MAP.gif" alt="MAP" width="200"/>
         <figcaption>MAP</figcaption>
     </figure>
-
     <figure>
         <img src="Tik.gif" alt="Tik" width="200"/>
         <figcaption>Tik</figcaption>
     </figure>
-
     <figure>
         <img src="NN.gif" alt="NN" width="200"/>
         <figcaption>NN</figcaption>
     </figure>
-
     <figure>
         <img src="GT.gif" alt="GT" width="200"/>
         <figcaption>GT</figcaption>
