@@ -2,9 +2,32 @@
 ```PULSE: Proximal Unrolling for Learning Solutions in ECGI```
 This repository includes the code for inverse ECG reconstruction via Half Quadratic Splitting.
 
-<img src="torso_voltage.gif" alt="torso_voltage" width="300"/>
+<div style="text-align: center;">
+    <figure>
+        <img src="torso_voltage.gif" alt="torso_voltage" width="300"/>
+        <figcaption>Torso Voltage</figcaption>
+    </figure>
 
-<img src="MAP.gif" alt="MAP" width="200"/><img src="Tik.gif" alt="Tik" width="200"/><img src="NN.gif" alt="NN" width="200"/><img src="GT.gif" alt="GT" width="200"/>
+    <figure>
+        <img src="MAP.gif" alt="MAP" width="200"/>
+        <figcaption>MAP</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Tik.gif" alt="Tik" width="200"/>
+        <figcaption>Tik</figcaption>
+    </figure>
+
+    <figure>
+        <img src="NN.gif" alt="NN" width="200"/>
+        <figcaption>NN</figcaption>
+    </figure>
+
+    <figure>
+        <img src="GT.gif" alt="GT" width="200"/>
+        <figcaption>GT</figcaption>
+    </figure>
+</div>
 
 ```bibtex
 @article{ugurlu2024,
