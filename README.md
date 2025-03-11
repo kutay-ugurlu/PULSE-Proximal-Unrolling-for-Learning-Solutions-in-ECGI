@@ -10,16 +10,25 @@ This repository includes the code for inverse ECG reconstruction via Half Quadra
 <div align="center">
     <table>
         <tr>
-            <td><img src="MAP.gif" width="150px"></td>
+            <td><strong>Reconstruction</strong></td>
             <td><img src="Tik.gif" width="150px"></td>
+            <td><img src="MAP.gif" width="150px"></td>
             <td><img src="NN.gif" width="150px"></td>
             <td><img src="GT.gif" width="150px"></td>
         </tr>
         <tr>
-            <td><strong>MAP</strong></td>
+            <td><strong>Method</strong></td>
             <td><strong>Tik</strong></td>
+            <td><strong>MAP</strong></td>
             <td><strong>NN</strong></td>
             <td><strong>GT</strong></td>
+        </tr>
+        <tr>
+            <td> Regularization </td>
+            <td> Only spatial regularization </td>
+            <td> Data-driven spatial regularization </td>
+            <td>Learned spatiotemporal regularization </td>
+            <td> - </td>
         </tr>
     </table>
 </div>
