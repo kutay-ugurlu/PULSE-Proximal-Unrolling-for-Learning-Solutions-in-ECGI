@@ -10,25 +10,25 @@ This repository includes the code for inverse ECG reconstruction via Half Quadra
 <div align="center">
     <table>
         <tr>
-            <td><strong>Reconstruction</strong></td>
-            <td><img src="Tik.gif" width="150px"></td>
-            <td><img src="MAP.gif" width="150px"></td>
-            <td><img src="NN.gif" width="150px"></td>
-            <td><img src="GT.gif" width="150px"></td>
+            <td align="center"><strong>Reconstruction</strong></td>
+            <td align="center"><img src="Tik.gif" width="150px"></td>
+            <td align="center"><img src="MAP.gif" width="150px"></td>
+            <td align="center"><img src="NN.gif" width="150px"></td>
+            <td align="center"><img src="GT.gif" width="150px"></td>
         </tr>
         <tr>
-            <td><strong>Method</strong></td>
-            <td><strong>Tik</strong></td>
-            <td><strong>MAP</strong></td>
-            <td><strong>NN</strong></td>
-            <td><strong>GT</strong></td>
+            <td align="center"><strong>Method</strong></td>
+            <td align="center"><strong>Tik</strong></td>
+            <td align="center"><strong>MAP</strong></td>
+            <td align="center"><strong>NN</strong></td>
+            <td align="center"><strong>GT</strong></td>
         </tr>
         <tr>
-            <td> Regularization </td>
-            <td> Only spatial regularization </td>
-            <td> Data-driven spatial regularization </td>
-            <td>Learned spatiotemporal regularization </td>
-            <td> - </td>
+            <td align="center">Regularization</td>
+            <td align="center">Only spatial regularization</td>
+            <td align="center">Data-driven spatial regularization</td>
+            <td align="center">Learned spatiotemporal regularization</td>
+            <td align="center">-</td>
         </tr>
     </table>
 </div>
