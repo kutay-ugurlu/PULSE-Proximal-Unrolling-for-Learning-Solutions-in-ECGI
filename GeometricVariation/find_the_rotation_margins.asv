@@ -1,0 +1,60 @@
+%% Load geometries
+wipe
+
+% Display all the geometries used in the Utah-490 ECGI studies
+load('reordered_epigeom490sock_closed_aligned_shifted.mat') % heart
+load('lungs_shifted.mat') % lungs
+load('tank192_outw_struct.mat') % torso for the electrodes
+load('tank771_closed2_outw_struct.mat') % fine torso - 771
+load('selected_192_leads_frm_771.mat')
+
+heart = struct();
+heart.faces = epigeom490sock_closed_aligned.fac;
+heart.vertices = epigeom490sock_closed_aligned.pts; 
+
+
+%% Plot 
+trisurf(lungs_shifted.faces,lungs_shifted.vertices(:,1),lungs_shifted.vertices(:,2),lungs_shifted.vertices(:,3))
+hold on 
+trisurf(heart.faces,heart.vertices(:,1),heart.vertices(:,2),heart.vertices(:,3))
+
+
+%% Save and reload 
+[result,surf] = SurfaceIntersection(heart,lungs_shifted);
+num_collisions = sum(result,"all");
+
+%% Apply transform on heart
+
+zview = [14 -76];
+xview = [4.9 -71.5];
+container = zeros(3,360);
+i = 0;
+for direction = ['xyz']
+    i = i+1;
+    for angle = [0:359]
+        heart.vertices = rotate_by(epigeom490sock_closed_aligned.pts,direction,angle) ;
+        [result,surf] = SurfaceIntersection(heart,lungs_shifted);
+        if ~sum(result,"all") % If does not collide, count this as one to see the available rotation margin
+            container(i,angle+1) = 1;
+            display(['positive ',direction,': ',num2str(angle)])
+        end
+    end
+end
+
+%%
+close all
+figure
+fftshifted_container = fftshift(container,2);
+newTicks = -180:30:179;
+labels = 'xyz';
+for i = 1:3
+    subplot(1,3,i)
+    plot(-180:179,fftshifted_container(i,:),'LineWidth',2)
+    title(labels(i))
+    xlim([-180 179])
+    xticks(newTicks);
+    xticklabels(arrayfun(@num2str, newTicks, 'UniformOutput', false));
+    set(gca, 'FontWeight', 'bold');
+end
+
+savefig('rotatin_margins.fig',)
