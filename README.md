@@ -36,13 +36,16 @@ This repository includes the code for inverse ECG reconstruction via Half Quadra
 # Citation
 
 ```bibtex
-@article{ugurlu2024pulse,
-  title={PULSE: A DL-assisted physics-based approach to the inverse problem of electrocardiography},
-  author={Ugurlu, Kutay and Akar, Gozde B and Dogrusoz, Yesim Serinagaoglu},
-  journal={IEEE Transactions on Biomedical Engineering},
-  year={2024},
-  publisher={IEEE}
-}
+@ARTICLE{ugurlu2024pulse,
+  author={Ugurlu, Kutay and Akar, Gozde B. and Dogrusoz, Yesim Serinagaoglu},
+  journal={IEEE Transactions on Biomedical Engineering}, 
+  title={PULSE: A DL-Assisted Physics-Based Approach to the Inverse Problem of Electrocardiography}, 
+  year={2025},
+  volume={72},
+  number={4},
+  pages={1328-1339},
+  keywords={Torso;Heart;Inverse problems;Image reconstruction;Geometry;Optimization;Electrocardiography;Training data;Training;Convolution;Deep learning;ECGI;inverse problem;learned priors},
+  doi={10.1109/TBME.2024.3501732}}
 ```
 # How to run 
 * Install dependencies with ``conda create --name pulse --file requirements.txt``
