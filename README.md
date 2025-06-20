@@ -35,6 +35,8 @@ This repository includes the code for inverse ECG reconstruction via Half Quadra
 
 # Citation
 
+## [Link to publication 📝](https://doi.org/10.1109/TBME.2024.3501732)
+
 ```bibtex
 @ARTICLE{ugurlu2024pulse,
   author={Ugurlu, Kutay and Akar, Gozde B. and Dogrusoz, Yesim Serinagaoglu},
