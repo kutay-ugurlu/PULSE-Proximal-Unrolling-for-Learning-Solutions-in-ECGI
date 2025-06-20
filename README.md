@@ -48,7 +48,7 @@ This repository includes the code for inverse ECG reconstruction via Half Quadra
   doi={10.1109/TBME.2024.3501732}}
 ```
 # How to run 
-* Install dependencies with ``conda create --name pulse --file requirements.txt``
+* Install dependencies with ``conda create --name pulse --file requirements_conda.txt`` or ``pip install -r requirements_pip.txt``
 * Place the training data in [TrainingData](TrainingData) folder following the structure of ``.mat`` files. 
 * Place the test data in [TestData](TrainingData) folder following the structure of ``.mat`` files. 
 * Use [create_training_data.ipynb](create_training_data.ipynb) notebook to generate framework-compatible training and test data.
